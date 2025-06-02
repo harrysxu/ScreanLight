@@ -12,6 +12,8 @@ struct ScreanLightApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .preferredColorScheme(.light) // 强制使用亮色主题
+                .statusBarHidden() // 隐藏状态栏以获得更好的照明效果
         }
     }
 }
